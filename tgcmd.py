@@ -1391,7 +1391,7 @@ def valentine(app, message):
      <b>Понял блять!</b>
      ''')
     
-   @app.on_message(filters.command("test", prefixes=".") & filters.me)
+@app.on_message(filters.command("test", prefixes=".") & filters.me)
 def betatest(_, msg):
     time = 0.1
     for i in range(1):
