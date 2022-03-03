@@ -1390,6 +1390,27 @@ def valentine(app, message):
     app.send_message(message.chat.id, f'''
      <b>Понял блять!</b>
      ''')
+    
+   @app.on_message(filters.command("test", prefixes=".") & filters.me)
+def betatest(_, msg):
+    time = 0.1
+    for i in range(1):
+        msg.edit(f'''
+это''')  # red
+        sleep(time)
+        msg.edit(f'''
+это обычный''')  # red
+        sleep(time)
+        msg.edit(f'''
+это обычный тест''')
+        sleep(time)
+        msg.edit(f'''
+это обычный тест проги''')
+        sleep(3)
+        msg.edit(f'<b> это обычный тест проги❤️ </b>')
+ 
+    
+   
 
 jopa = '''
            <b>ВЗЛОМ ЖОПЫ</b> 
